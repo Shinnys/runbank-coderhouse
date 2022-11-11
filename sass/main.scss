@@ -1,0 +1,32 @@
+// Carpeta utils
+@import "./utils/variables";
+@import "./utils/mixins";
+
+// Carpeta base 
+@import "./base/reset";
+@import "./base/typography";
+@import "./base/animations";
+
+// Carpeta components
+@import "./components/header";
+@import "./components/footer";
+
+// Carpeta pages
+@import "./pages/index";
+
+
+/* Colores fondo */
+.background-color-green {
+    background-color: $color-green;
+    color: $color-black;
+}
+
+.background-color-purple {
+    background-color: $color-purple;
+    color: $color-white;
+}
+
+.background-color-white {
+    background-color: $color-white;
+    color: $color-black;
+}

@@ -1,0 +1,193 @@
+/* Seccion (descargar App) */
+.section-download {
+    .runbank-card {
+        margin-top: 48px;
+        margin-bottom: 40px;
+        padding-right: 16px;
+        padding-left: 16px;
+        transform: rotate(10deg);
+        animation: floating-card 4s ease-in-out infinite;
+
+        @include medium {
+            margin-top: 64px;
+            margin-bottom: 64px;
+            max-width: 75%;
+        }
+    
+        @include large {
+            max-width: 100%;
+        }
+
+        @include extra-large {
+            max-width: 90%;
+        }
+
+        @include huge {
+            max-width: 80%;
+        }
+    }
+    
+    .runbank-text {
+        margin-top: 8px;
+    
+        @include large {
+            margin-top: 32px;
+        }
+    
+        @include extra-large {
+            margin-top: 64px;
+        } 
+    
+        .runbank-download {
+            width: 160px;
+        
+            @include small {
+                width: 192px;
+            }
+        
+            @include medium {
+                width: 224px;
+            }
+        
+           @include large {
+                width: 192px;
+            }
+        }
+    }    
+}
+
+/* Seccion (info) */
+/* .section-info {
+
+}
+ */
+/* Seccion (card) */
+.section-card {
+    padding-top: 48px;
+    padding-bottom: 40px;
+
+    .card__title {
+        padding-bottom: 0;
+    }
+
+    .card__text {
+        padding-bottom: 24px;
+    }
+
+    .card__box {
+        display: flex;
+        align-items: flex-start;
+        gap: 24px;
+        
+        /* &--item {
+            padding: 1rem;
+        } */
+
+        @include large {
+            align-items: center;
+            height: 50%;
+        }
+        
+        .card__icon {
+            color: $color-purple;
+            font-size: 2rem;
+            order: -1;
+
+            @include large {
+                font-size: 2.5rem;
+                order: 0;
+            }
+        }
+    }
+    
+    .runbank-card-animation {
+        padding-right: 16px;
+        padding-left: 16px;
+        padding-bottom: 32px;
+
+        @include medium {
+            padding-right: 48px;
+            padding-left: 48px;
+        }
+
+        @include large {
+            margin-top: 48px;
+            padding-right: 16px;
+            padding-left: 16px;
+            padding-bottom: 0px;
+
+            &:hover {
+                transform: scale(1.05);
+            }
+        }
+        
+        @include extra-large {
+            margin-top: 8px;
+        }
+    }    
+}
+
+/* Seccion (¿como comenzar?) */
+.section-start {
+    padding-top: 32px;
+    padding-bottom: 48px;
+
+    .start__title {
+        padding-bottom: 32px;
+    }
+
+    .start__boxes {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        gap: 32px;
+    
+        @include large {
+            display: grid;
+            justify-content: center;
+            grid-template-columns: repeat(3, 1fr);
+        }
+    
+        .start__box {
+            display: flex;
+    
+            &--number {
+                background-color: $color-white;
+                color: black;
+                border: 1px solid black;
+                border-right: 0px;
+                font-size: 1.5rem;
+                font-weight: 600;
+                padding: 4px 16px;
+                margin-bottom: auto;
+                filter: drop-shadow(-6px 6px 2px rgba(244, 245, 239, 0.25));
+                display: none;
+    
+                @include large {
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+    
+            &--item {
+                background-color: $color-green;
+                color: black;
+                border: 1px solid black;
+                font-size: 1.2rem;
+                font-weight: 600;
+                padding: 1rem;
+                width: 100%;
+                height: 100%;
+                filter: drop-shadow(-10px 10px 2px rgba(244, 245, 239, 0.25));
+            }
+    
+            @include large {
+                &:hover {
+                    transform: scale(1.05);
+                }
+            }
+        }
+    }
+}
+
+

@@ -1,0 +1,13 @@
+.container__footer {
+    padding-top: 48px;
+    padding-bottom: 40px;
+
+    display: flex;
+    flex-direction: column;
+
+    @include large {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}

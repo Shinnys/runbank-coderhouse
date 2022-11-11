@@ -1,0 +1,13 @@
+@keyframes floating-card {
+    0% {
+        transform: translate(0%, 0%) rotate(10deg);
+    }
+
+    50% {
+        transform: translate(0%, 6%) rotate(8deg);
+    }
+
+    100% {
+        transform: translate(0%, 0%) rotate(10deg);
+    }
+}
