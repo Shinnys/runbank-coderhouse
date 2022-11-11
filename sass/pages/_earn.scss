@@ -1,0 +1,94 @@
+/* Earn */
+.section-earn-text {
+    padding-top: 32px;
+    padding-bottom: 24px;
+
+    &__title {
+        color: $color-purple;
+        font-weight: bold;
+    }
+    
+    &__text {
+        font-weight: 600;
+    }
+}
+
+.section-earn-crypto {
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    .earn-crypto__title {
+        color: $color-purple;
+        font-weight: 800;
+
+        margin-bottom: 0px;
+        padding-top: 24px;
+        padding-bottom: 12px;
+
+        @include large {
+            padding-top: 16px;
+            padding-bottom: 8px;
+        }
+    }
+
+    .earn-crypto__text {
+        margin-bottom: 0px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+    } 
+
+    .row {
+        .col-lg-5 {
+            text-align: center;
+            margin-bottom: 16px;
+
+            .img-crypto-earn {
+                @include large {
+                    animation: floating-card 4s ease-in-out infinite;
+                };
+            }
+        }
+    }
+}
+
+
+.section-earn-box {
+    padding-top: 16px;
+    padding-bottom: 32px;
+    display: flex;
+    flex-direction: column;
+
+    @include large {
+        padding-top: 32px;
+
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+    }
+    
+    .earn__boxes {
+        display: flex;
+        gap: 24px;
+        padding: 1rem;
+
+        .earn__icon {
+            color: $color-purple;
+            font-size: 2rem;
+
+            @include large {
+                font-size: 2.5rem;
+            }
+        }
+
+        .earn__box {
+            &--title {
+                font-weight: 700;
+            }
+
+            &--text {
+                font-weight: normal;
+            }
+        }
+    }
+}
+

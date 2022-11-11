@@ -1,0 +1,132 @@
+.section-commission-free {
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    @include large {
+
+    }
+    .commission-free__box {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+
+        @include small {
+            gap: 24px;
+        }
+        .commission-free__icon {
+            color: $color-purple;
+            font-size: 1.5rem;
+            @include large {
+                font-size: 2.5rem;
+            }
+        }
+
+        .commission-free__text {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            flex: 10;
+            
+            &--title {
+                color: $color-purple;
+                font-weight: 700;
+                margin: 0;
+            }
+
+            &--text {
+                font-weight: 500;
+            }
+        }
+
+        .commission-free__cost {
+            color: $color-purple;
+            font-weight: 700;
+        }
+    }
+}
+
+.commission-text-cost {
+    color: $color-purple;
+    font-weight: 700;
+    text-align: center;
+
+    @include medium {
+        margin: 0;
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+}
+
+.section-commission-cost {
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    @include large {
+
+    }
+    .commission-cost__box {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 16px;
+
+        @include small {
+            align-items: center;
+            gap: 24px;
+        }
+
+        .commission-cost__icon {
+            display: none;
+            
+            @include small {
+                color: $color-purple;
+                font-size: 1.5rem;
+                display: block;
+            }
+
+            @include large {
+                font-size: 2.5rem;
+            }
+        }
+
+        .commission-cost__text {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            flex: 8;
+
+            &--title {
+                color: $color-purple;
+                font-weight: 700;
+                margin: 0;
+            }
+
+            &--text {
+                font-weight: 500;
+            }
+        }
+
+        .commission-cost__cost {
+            color: $color-purple;
+            font-weight: 700;
+            
+            flex: 5;
+
+            @include small {
+                text-align: end;
+                flex: 2;
+            }
+        }
+    }
+}

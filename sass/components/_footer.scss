@@ -1,13 +1,77 @@
+/* Footer */
 .container__footer {
-    padding-top: 48px;
-    padding-bottom: 40px;
-
+    padding-top: 32px;
+    padding-bottom: 32px;
     display: flex;
     flex-direction: column;
+    text-align: center;
+    gap: 24px;
+
+    &--runbank {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    &--contact {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    &--download {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+
+        .footer__download {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 16px;
+            
+            @include small {
+                flex-direction: row;
+                justify-content: center;
+            }
+
+            @include large {
+                flex-direction: column;
+            }
+
+            .runbank-download-footer {
+                width: 192px;
+            }
+        }
+    }
+
+    .footer__icon {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 1.5rem;
+        font-size: 1.5rem;
+        
+        @include large {
+            justify-content: center;
+        }
+
+        a {
+            color: $color-white;
+            text-decoration: none;
+        }
+    }
+
+    .footer__copyright {
+        padding-top: 16px;
+        @include large {
+            grid-column: 2 / 3;
+        }
+    }
 
     @include large {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
     }
-
 }

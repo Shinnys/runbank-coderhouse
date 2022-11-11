@@ -1,23 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Runbank</title>
 </head>
 <body>
     <!-- Header -->
-    <header>
-
+    <header class="navbar navbar-expand-lg background-color-green">
+        <div class="container">
+            <a class="navbar-brand" href="./index.html">
+                <img src="./images/runbank_logo.png" alt="Logo Runbank">
+                <h1 class="runbank-seo">Runbank</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav navbar-menu">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/earn.html">Earn</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/commission.html">Comisión</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/help.html">Ayuda</a>
+                    </li>
+                </ul> 
+                <a href="./pages/register.html">
+                    <button class="btn btn-account">Abrir cuenta</button>
+                </a>
+            </nav>
+        </div>
     </header>
 
     <!-- Main -->
     <main>
-
         <!-- Seccion (descargar App) -->
         <section class="container-fluid background-color-green ">
             <div class="container">
@@ -42,7 +68,7 @@
         </section>
 
         <!-- Seccion (info)-->
-        <section class="container-fluid background-color-white">
+        <!-- <section class="container-fluid background-color-white">
             <div class="container">
                 <div class="section-info">
                     <div class="row">
@@ -50,12 +76,12 @@
                         
                         </div>
                         <div class="col-lg-7 ">
-    
+                            
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
 
         <!-- Seccion (card)-->
         <section class="container-fluid background-color-white">
@@ -163,38 +189,54 @@
         <div class="container">
             <div class="container__footer">
                 <div class="container__footer--runbank">
-                    <div class="footer__logo">
+                    <div class="text-lg-start">
                         <img src="./images/runbank_logo-white.png" alt="Logo Runbank">
                     </div>
-                    <div class="footer__info">
-                        <div class="py-5">Descargá la app y hacete cliente en pocos minutos.</div>
-                    </div>
+                    <div class="h6 text-lg-start">Runbank es una app que te permite ingresar al mundo crypto y a la web3, para pagar con una tarjeta Visa Internacional, de manera fácil, rápida y segura.</div>
                 </div>
-
-                <div class="text-center container__footer--contact">
+                    
+                <div class="container__footer--contact">
                     <div class="footer__icon">
-                        <a href="https://www.instagram.com/" target="_blank" class="footer__icon--item">
+                        <a href="https://www.instagram.com/" target="_blank">
                             <i class="bi bi-instagram"></i>
                         </a>
-                        <a href="https://www.facebook.com/" target="_blank" class="footer__icon--item">
+                        <a href="https://www.facebook.com/" target="_blank">
                             <i class="bi bi-facebook"></i>
                         </a>
-                        <a href="https://twitter.com/" target="_blank" class="footer__icon--item">
+                        <a href="https://twitter.com/" target="_blank">
                             <i class="bi bi-twitter"></i>
                         </a>
-                        <a href="https://www.linkedin.com/" target="_blank" class="footer__icon--item">
+                        <a href="https://www.linkedin.com/" target="_blank">
                             <i class="bi bi-linkedin"></i>
                         </a>
-                        <a href="https://www.whatsapp.com/" target="_blank" class="footer__icon--item">
+                        <a href="https://www.whatsapp.com/" target="_blank">
                             <i class="bi bi-whatsapp"></i>
                         </a>
                     </div>
-                    <div class="footer__attention">
-                        <p>Atención al cliente <br> TEL: 0800-111-1111 <br> soporte@runbank.com.ar</p>
+                    <div class="h6">
+                        <div>Atención al cliente</div>
+                        <div>TEL: 0800-111-1111</div>
+                        <div>soporte@runbank.com.ar</div>
                     </div>
                 </div>
+
+                <div class="container__footer--download">
+                    <div class="h5">Baja la App</div>
+                    <div class="footer__download">
+                        <a href="https://www.apple.com/app-store/" target="_blank">
+                            <img src="./images/download_appstore-white.png" alt="Descargar la app de Runbank para iOS" class="runbank-download-footer">
+                        </a>
+                        <a href="https://play.google.com/" target="_blank">
+                            <img src="./images/download_googleplay-white.png" alt="Descargar la app de Runbank para Android" class="runbank-download-footer">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="h6 footer__copyright">Copyright 2022 © Runbank.</div>
             </div>
         </div>
     </footer>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
