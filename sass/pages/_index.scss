@@ -56,11 +56,6 @@
     }    
 }
 
-/* Seccion (info) */
-/* .section-info {
-
-}
- */
 /* Seccion (card) */
 .section-card {
     padding-top: 48px;
@@ -160,7 +155,8 @@
                 font-weight: 600;
                 padding: 4px 16px;
                 margin-bottom: auto;
-                filter: drop-shadow(-6px 6px 2px rgba(244, 245, 239, 0.25));
+                box-shadow: -6px 6px 8px rgba(244, 245, 239, 0.25);
+                /* filter: drop-shadow(-6px 6px 2px rgba(244, 245, 239, 0.25)); */
                 display: none;
     
                 @include large {
@@ -178,7 +174,8 @@
                 padding: 1rem;
                 width: 100%;
                 height: 100%;
-                filter: drop-shadow(-10px 10px 2px rgba(244, 245, 239, 0.25));
+                box-shadow: -8px 8px 8px rgba(244, 245, 239, 0.25);
+                /* filter: drop-shadow(-10px 10px 2px rgba(244, 245, 239, 0.25)); */
             }
     
             @include large {

@@ -1,0 +1,67 @@
+/* Register */
+.background-register {
+    height: 100%;
+    background-color: #F3E4EE;
+    background-image: url(../images/background.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+.section-register {
+    max-width: 784px;
+    padding: 32px;
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: -16px 16px 16px rgba(30,94,218, 0.4);
+    border-radius: 1rem;
+
+    .btn-form {
+        color: $color-white;
+        border-color: $color-purple;
+        background-color: $color-purple;
+        border-radius: 0;
+        font-size: 1rem;
+        font-weight: 700;
+        padding-right: 16px;
+        padding-left: 16px;
+        
+        @include large {
+            &:hover {
+                color: $color-purple;
+                background-color: $color-white;
+                border-color: $color-purple;            
+            }
+        }
+    }
+}
+
+.form-control {
+    min-height: 48px;
+    line-height: initial;
+    background: rgba(255, 255, 255, 0.5);
+    border: none;
+    border-radius: 0; 
+
+    &:focus {
+        background: rgba(255, 255, 255, 0.5);
+        box-shadow: 0px 0px 4px rgba($color-purple, 1);
+    }
+}
+
+.form-check-input {
+
+    border-color: $color-purple;
+    &:focus {
+        box-shadow: none;
+        border-color: $color-purple;
+    } 
+
+    &:checked {
+        background-color: $color-purple;
+        border-color: $color-purple;
+    }
+
+}
+

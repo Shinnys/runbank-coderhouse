@@ -1,0 +1,75 @@
+/* Help */
+.section-help {
+    padding-top: 48px;
+    padding-bottom: 48px;
+
+    .help-title {
+        color: $color-purple;
+        font-weight: 700;
+        margin-right: 24px;
+        padding-bottom: 16px;
+    }
+
+    .help-text {
+        font-weight: 500;
+        margin-right: 24px;
+        padding-bottom: 24px;
+    }
+
+    .btn-contact {
+        color: $color-white;
+        border-color: $color-purple;
+        background-color: $color-purple;
+        border-radius: 0;
+        font-size: 1.25rem;
+        font-weight: 700;
+        padding-right: 16px;
+        padding-left: 16px;
+    
+        @include large {
+            &:hover {
+                color: $color-purple;
+                background-color: $color-white;
+                border-color: $color-purple;            
+            }
+        }
+    }
+}
+
+.accordion {
+    /* --bs-accordion-border-color: $color-black; */
+    --bs-accordion-border-radius: 0;
+    --bs-accordion-btn-focus-border-color: none;
+
+    .accordion-item {
+        background-color: $color-white;
+        border: none;
+        .accordion-header {
+            background-color: $color-purple;
+            color: $color-white;
+
+            .accordion-button {
+                background-color: $color-purple;
+                color: $color-white;
+                font-weight: bold;
+
+                &:focus {
+                    border: none;
+                    z-index: 0;
+                    border-color: $color-purple; 
+                    box-shadow: none;
+                }
+                
+                &:not(.collapsed) {
+                    color: $color-white;
+                    background-color: $color-purple;
+                    box-shadow: none;
+                }
+            }  
+        }    
+        
+        .accordion-collapse {
+            background-color: $color-white;
+        }
+    }
+}

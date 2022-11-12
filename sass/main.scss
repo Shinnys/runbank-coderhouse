@@ -15,19 +15,5 @@
 @import "./pages/index";
 @import "./pages/earn";
 @import "./pages/commission";
-
-/* Colores fondo */
-.background-color-green {
-    background-color: $color-green;
-    color: $color-black;
-}
-
-.background-color-purple {
-    background-color: $color-purple;
-    color: $color-white;
-}
-
-.background-color-white {
-    background-color: $color-white;
-    color: $color-black;
-}
+@import "./pages/help";
+@import "./pages/register";
