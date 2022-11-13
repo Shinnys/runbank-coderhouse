@@ -1,4 +1,20 @@
 /* Seccion (descargar App) */
+/* Colores fondo */
+.background-color-green {
+    background-color: $color-green;
+    color: $color-black;
+}
+
+.background-color-purple {
+    background-color: $color-purple;
+    color: $color-white;
+}
+
+.background-color-white {
+    background-color: $color-white;
+    color: $color-black;
+}
+
 .section-download {
     .runbank-card {
         margin-top: 48px;
@@ -49,19 +65,72 @@
                 width: 224px;
             }
         
-           @include large {
+            @include large {
                 width: 192px;
             }
         }
     }    
 }
 
+/* Seccion (info) */
+.section-info {
+    padding-top: 48px;
+    padding-bottom: 16px;
+
+    .runbank-app {
+        display: none;
+
+        @include large {
+            display:inline;
+        }
+    }
+
+    .info__title{
+        color: $color-purple;
+    }
+
+    .info__container {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        padding-top: 24px;
+
+        @include medium {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: 32px;
+            row-gap: 24px;
+            padding-top: 32px;
+        }
+        .info__box {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+
+            .info__icon {
+                color: $color-purple;
+                font-size: 2rem;
+            }
+    
+            .info__description {
+                margin: 0;
+            }
+        }
+    }
+}
+
 /* Seccion (card) */
 .section-card {
-    padding-top: 48px;
-    padding-bottom: 40px;
+    padding-top: 24px;
+    padding-bottom: 32px;
+
+    @include large {
+        padding-top: 48px;
+        padding-bottom: 40px;
+    }
 
     .card__title {
+        color: $color-purple;
         padding-bottom: 0;
     }
 
@@ -186,5 +255,3 @@
         }
     }
 }
-
-

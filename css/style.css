@@ -11,22 +11,6 @@ a {
   text-decoration: none;
 }
 
-/* Colores fondo */
-.background-color-green {
-  background-color: #C6F277;
-  color: #000000;
-}
-
-.background-color-purple {
-  background-color: #614AD9;
-  color: #F4F5EF;
-}
-
-.background-color-white {
-  background-color: #F4F5EF;
-  color: #000000;
-}
-
 /* Tipografía */
 body {
   font-family: "Poppins", sans-serif;
@@ -179,6 +163,22 @@ header {
 }
 
 /* Seccion (descargar App) */
+/* Colores fondo */
+.background-color-green {
+  background-color: #C6F277;
+  color: #000000;
+}
+
+.background-color-purple {
+  background-color: #614AD9;
+  color: #F4F5EF;
+}
+
+.background-color-white {
+  background-color: #F4F5EF;
+  color: #000000;
+}
+
 .section-download .runbank-card {
   margin-top: 48px;
   margin-bottom: 40px;
@@ -241,12 +241,63 @@ header {
   }
 }
 
+/* Seccion (info) */
+.section-info {
+  padding-top: 48px;
+  padding-bottom: 16px;
+}
+.section-info .runbank-app {
+  display: none;
+}
+@media screen and (min-width: 992px) {
+  .section-info .runbank-app {
+    display: inline;
+  }
+}
+.section-info .info__title {
+  color: #614AD9;
+}
+.section-info .info__container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-top: 24px;
+}
+@media screen and (min-width: 768px) {
+  .section-info .info__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 32px;
+    row-gap: 24px;
+    padding-top: 32px;
+  }
+}
+.section-info .info__container .info__box {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.section-info .info__container .info__box .info__icon {
+  color: #614AD9;
+  font-size: 2rem;
+}
+.section-info .info__container .info__box .info__description {
+  margin: 0;
+}
+
 /* Seccion (card) */
 .section-card {
-  padding-top: 48px;
-  padding-bottom: 40px;
+  padding-top: 24px;
+  padding-bottom: 32px;
+}
+@media screen and (min-width: 992px) {
+  .section-card {
+    padding-top: 48px;
+    padding-bottom: 40px;
+  }
 }
 .section-card .card__title {
+  color: #614AD9;
   padding-bottom: 0;
 }
 .section-card .card__text {
